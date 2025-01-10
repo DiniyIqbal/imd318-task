@@ -1,0 +1,273 @@
+
+h1{
+  font-family: serif;
+  color: #f0f8ff;
+  height: 65px;
+  width: 97rem;
+  margin-left: -8px;
+  margin-top:-9px;
+  font-size: 3.0rem;
+  font-weight: 100;
+  text-align: center;
+  background-color: #34495e;
+}
+
+
+header {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  padding: 2.0rem 20%;
+  
+}
+
+nav {
+  
+  margin: 2rem ;
+  margin-inline: 1.5rem;
+  position: relative;
+  width: 850px;
+  height: 50px;
+  background-color: #34495e;
+  border-radius: 10px;
+  font-size: 0;
+  overflow: hidden;
+}
+
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 19.7rem;
+  width: 150px;
+  background-color: #C71585;
+  z-index: 0;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+
+
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+a:nth-child(4) {
+  width: 160px;
+}
+a:nth-child(5) {
+  width: 120px;
+}
+a:nth-child(6) {
+  width: 110px;
+}
+a:nth-child(7) {
+  width: 150px;
+}
+
+a:nth-child(1):hover ~ .animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
+}
+a:nth-child(2):hover ~ .animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+a:nth-child(3):hover ~ .animation {
+  width: 100px;
+  left: 210px;
+  background-color: #8B4513;
+}
+a:nth-child(4):hover ~ .animation {
+  width: 160px;
+  left: 310px;
+  background-color: #C71585;
+}
+a:nth-child(5):hover ~ .animation {
+  width: 120px;
+  left: 470px;
+  background-color: #e67e22;
+}
+a:nth-child(6):hover ~ .animation {
+  width: 110px;
+  left: 590px;
+  background-color: #CD5C5C; 
+}
+a:nth-child(7):hover ~ .animation {
+  width: 150px;
+  left: 700px;
+  background-color: #800080; 
+}
+@media (max-width: 700px) {
+  nav {
+    width: 100%;
+  }
+  nav a {
+    font-size: 14px;
+  }
+}
+
+body, html {
+  height: 100%;
+  margin: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: 'Poppine',serif;
+  padding: 50px;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5rem;
+  background: linear-gradient(to right,#800000, #FFDEAD, #C71585, #EEE8AA,#F5DEB3);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation: animate-gradient 3s linear infinite;
+}
+
+@keyframes animate-gradient{
+  to{
+    background-position: 200%;
+  }
+}
+
+.education {
+  background-color: #ecebd5;
+  margin-top: -4rem;
+  margin-left: -1rem;
+  height: 80rem;
+  width: 97rem;
+}
+.education .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.education .box-container .box {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgb(23, 24, 20);
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  transition: 0.3s;
+  background: rgb(252, 252, 252);
+}
+.education .box-container .box:hover {
+  transform: scale(1.03);
+  box-shadow: 1rem 0.5rem 1.2rem rgb(52, 73, 94);
+}
+.education .box-container .box .image {
+  flex: 1 1 20rem;
+  width: 100%;
+}
+.education .box-container .box img {
+  object-fit: cover;
+  position: relative;
+  width: 90%;
+  height: 67%;
+}
+.education .box-container .box .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex-wrap: wrap;
+  flex: 1 1 70rem;
+}
+.education .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #012970;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 1rem;
+}
+.education .box-container .box .content p {
+  margin-top: -1.0rem;
+  font-size: 1.9rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+.education .box-container .box .content ul {
+  margin-top: -1rem;
+  font-size: 1.0rem;
+  margin-left: 1.5rem;
+  text-align: left;
+}
+.education h4 {
+  font-size: 2rem;
+  color: rgb(34, 109, 0);
+  text-align: left;
+  margin: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  .education .box-container .box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .education .box-container .box .image {
+    width: 100%;
+    height: 2.5rem;
+  }
+  .education .box-container .box img {
+    width: 100%;
+  }
+  .education .box-container .box .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex: 0;
+  }
+  .education .btns {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #778899;
+  color: white;
+  padding: 10px 0;
+  margin-top: 0px;
+  font-size: 14px;
+}
